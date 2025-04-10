@@ -1,5 +1,55 @@
-*{
+/* font og H størrelse */
+
+h1{
+    font-size: 4em;
+    color: #000;
+    font-weight: lighter; 
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    
+    
+    
+}
+
+
+
+
+
+
+
+
+*{ 
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
+
+
+
+/*Forside*/
+
+#forsidebillede{
+    width: 100%;
+    position: relative;
+}
+
+#forsidebillede img{
+    width: 100%;
+    position: absolute;
+}
+
+#forsidebillede section h1{
+    position: absolute;
+    color: white;
+    top: 500%;
+}
+
+#forsidebillede section p{
+    position: absolute;
+    color: red;
+}
+
+
+
+
+/*Forside slut*/

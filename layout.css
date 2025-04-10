@@ -1,0 +1,51 @@
+/*fælles*/
+#bølgebillede {
+    position: relative;
+    width: 150%;
+    height: auto;
+    left:-25%;
+    transform: translateY(-33%);
+    z-index: 1;
+}  
+
+
+
+
+#genvejsgruppe {
+    margin-left: 4%;
+    margin-top: 4%;
+    z-index: 8;
+}
+
+
+#genveje{
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+}
+
+
+#genveje a {
+    text-decoration: none;
+    color:#0499BF;
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: lighter;
+    margin-top: 1%;
+    margin-left: -0.5%;
+}
+
+
+
+
+/*materialer*/
+
+
+ 
+
+
+
+
+
+/*keramik*/
