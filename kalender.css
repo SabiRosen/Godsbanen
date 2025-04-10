@@ -42,3 +42,22 @@
     padding: 2px;
     width: 100%;
 }
+
+/*kalender kort*/
+
+.kort-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5%;
+    margin-top: 4%;
+}
+
+.kort p, .kort h2{
+    font-family: 'InterMedium', sans-serif;
+    text-transform: uppercase;
+}
+
+.kort h3{
+    font-family: 'InterMedium', sans-serif;
+}
