@@ -1,0 +1,44 @@
+#kalenderoverskrift{
+    text-align: center;
+    margin-top: 4%;
+}
+
+#sortering{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+    text-align: left;
+    margin-left: 4%;
+}
+
+#sortering ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 20%;
+}
+
+#sortering li{
+    text-transform: uppercase;
+    font-family: 'InterRegular', sans-serif;
+}
+
+/*søgefelt*/
+
+.search {
+    display: flex;
+    align-items: center;
+    border: 2px solid #0499BF;
+    border-radius: 20px;
+    padding: 5px 10px;
+    width: 120px;
+    margin-right: 4%;
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 2px;
+    width: 100%;
+}

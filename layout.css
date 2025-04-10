@@ -1,12 +1,20 @@
 /*fælles*/
-#bølgebillede {
-    position: relative;
-    width: 150%;
-    height: auto;
-    left:-25%;
-    transform: translateY(-33%);
-    z-index: 1;
-}  
+
+.topbaggrundsbillede{
+ 
+    background-image: url('images/keramik-værksted-baggrund.jpg');
+    background-repeat: no-repeat;
+    background-position: center -900%;
+    background-size:cover;
+    height: 100vh;
+   
+  
+}
+
+ .pilned {
+    margin-left: 95%; 
+    margin-top: 34%;
+ }
 
 
 
@@ -49,3 +57,6 @@
 
 
 /*keramik*/
+.fittyfitty{
+    background-color: #DBD8C6;
+}

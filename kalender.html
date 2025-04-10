@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="headerfooter.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="kalender.css">
     <title>Kalender</title>
 </head>
 <body>
@@ -40,11 +41,43 @@
 </header>
 
 <main>
-    <h1>Kalender</h1>
+    <div id="kalenderoverskrift">
+        <h1>Kalender</h1>
+    </div>
+
+    <div id="sortering">
+        <ul>
+            <li>Kategori</li>
+            <li><img src="images/droppil.svg" alt="droppil"></li>
+            <li>Måned</li>
+            <li><img src="images/droppil.svg" alt="droppil"></li>
+        </ul>
+        <form class="search">
+            <input type="search" class="search-input" placeholder="Søg...  🔍">
+        </form>
+    </div>
     
-    <br>
-    <br>
-    <br>
+    <div class="kort-container">
+        <div class="kort">
+            <img src="images/kalenderbillede1.jpg" alt="Kalender billede 1">
+            <h2>Event 1</h2>
+            <p>Dato: 01-01-2024</p>
+            <p>Tid: 10:00 - 12:00</p>
+            <p>Beskrivelse af event 1.</p>
+        </div>
+        <div class="kort">
+            <img src="images/kalenderbillede2.jpg" alt="Kalender billede 2">
+            <h2>Event 2</h2>
+            <p>Dato: 02-01-2024</p>
+            <p>Tid: 14:00 - 16:00</p>
+            <p>Beskrivelse af event 2.</p>
+        </div>
+        <!-- Flere kort kan tilføjes her -->
+
+    </div>
+
+    
+
     <br>
     <br>
     <br>
