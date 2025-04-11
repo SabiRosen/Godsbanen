@@ -8,7 +8,7 @@
     justify-content: space-between;
     margin-top: 2%;
     text-align: left;
-    margin-left: 4%;
+    margin-left: 11.5%;
 }
 
 #sortering ul{
@@ -32,7 +32,7 @@
     border-radius: 20px;
     padding: 5px 10px;
     width: 120px;
-    margin-right: 4%;
+    margin-right: 13%;
 }
 
 .search-input {
@@ -49,15 +49,64 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 5%;
+    gap: 8%;
     margin-top: 4%;
 }
 
-.kort p, .kort h2{
+.kort p{
     font-family: 'InterMedium', sans-serif;
     text-transform: uppercase;
+    text-align: left;
+}
+
+.kort h2{
+    font-family: 'InterMedium', sans-serif;
+    text-transform: uppercase;
+    text-align: right;
 }
 
 .kort h3{
     font-family: 'InterMedium', sans-serif;
+    text-align: left;
+}
+
+.månedeoverskrift{
+    text-align: left;
+    margin-left: 11.5%;
+    font-family: 'InterBold', sans-serif;
+    color:#EB5351;
+    text-transform: uppercase;
+}
+
+
+/*RESPONSIVE*/
+
+@media screen and (max-width:1000px){
+    #kalenderoverskrift{
+        margin-top: 10%;
+    }
+
+    #sortering{
+        margin-left: 5%;
+    }
+
+    #sortering ul{
+        gap: 5%;
+    }
+
+    .search {
+        width: 80px;
+        margin-right: 5%;
+    }
+
+    .kort-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 0%;
+    }
+
+    .månedeoverskrift{
+        margin-left: 0%;
+    }
+
 }

@@ -44,7 +44,7 @@ h1{
 
 
 
-/*Forside*/
+                                    /*Forside*/
 
 #forsidebillede{
     width: 100%;
@@ -57,23 +57,114 @@ h1{
 
 .herologo{
     position: absolute;
-    width: 30%;
-    margin: 35%;
+    width: 35%;
+    margin-top: 25%;
+    margin-left: 33%;
 }
 
 #forsidebillede div p{
     position: absolute;
     color: white;
-    margin: 44%;
+    margin-top: 35%;
+    margin-left: 45%;
     
 }
+/*kalender afsnit*/
 
 .kalenderkort{
-    display: flex;
     margin-top: 50%;
+    text-align: center;
+}
+
+.kalenderkort a{
+    text-decoration: none;
+    color: black;
+    font-size: 200%;
+    text-align: center;
+}
+
+.kalenderkort h2, .kalenderkort p{
+    text-align: left;
+    margin-left: 33%;
+   
+}
+.kalenderkort p{
+    font-size: 110%;
+}
+
+.kalenderkort h3{
+    text-align: right;
+    margin-right: 35%;
+    margin-top: -3%;
+}
+
+.dejudstilling img{
+    box-shadow: 20px 20px #EB5351;
+    border:solid black; /*Mindre borderkant?*/
+}
+
+.badguy{
+    border: solid black;
+    box-shadow: 10px 10px #EB5351;
+}
+
+.kalswipe{
+  display: flex;
+  justify-content: right;
+  margin-top: -35%;
+}
+
+#swipepil{
+margin-right: -2%;
+z-index: 0;
+}
+
+/*Lej lokale og Gods afsnit*/
+
+.lejlok{
+    width: 100%;
+    z-index: 0;
+}
+
+.lejlok img{ /*Skal formen være mindre?*/
+    width: 100%;
+    position: relative;
+}
+
+.lokt{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-top: -60%;
+    padding: 5%;
+    width: 100%;
+    margin-left: 10%;
+}
+
+
+.lokt img{
+    width: 20%;
+    border-radius: 100%;
+    position: absolute;
+    right: 20%;
+}
+
+.lm{
+    background-color: #0499bf;
+    color:white;
+    text-decoration: none;
+    padding: 1%;
+    border-radius: 5%;
+    position: absolute;
+    margin-top: -40%;
+    left: 25%;    
+}
+
+.tekst{
+    width: 35%;
 }
 
 
 
 
-/*Forside slut*/
+                                    /*Forside slut*/

@@ -1,17 +1,22 @@
 /*fælles*/
 
-.topbaggrundsbillede{
- 
-    background-image: url('images/keramik-værksted-baggrund.jpg');
-    background-repeat: no-repeat;
-    background-position: center -900%;
-    background-size:cover;
-    height: 100vh;
-   
-  
+.keramikforside{
+    position: relative;
+    width: 100%;
 }
 
- .pilned {
+.bølgebillede{
+    width: 100%;
+    margin: 0;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    height: 100vh;
+    z-index: 1;
+}
+
+.pilned {
     margin-left: 95%; 
     margin-top: 34%;
  }
@@ -19,21 +24,33 @@
 
 
 
-#genvejsgruppe {
+
+
+
+
+
+
+ 
+ /* et . er en class og # er en id */
+
+.genvejsgruppe {
     margin-left: 4%;
-    margin-top: 4%;
+    position: absolute;
     z-index: 8;
+    margin-top: 0;
+    top:4%;
 }
 
 
-#genveje{
+.genveje{
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
     gap: 2%;
 }
 
 
-#genveje a {
+.genveje a {
     text-decoration: none;
     color:#0499BF;
     font-size: 1.5em;
@@ -41,13 +58,55 @@
     text-transform: uppercase;
     font-weight: lighter;
     margin-top: 1%;
-    margin-left: -0.5%;
 }
 
 
 
 
 /*materialer*/
+
+.fittyfitty{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #DBD8C6;
+    width: 100%;
+}
+
+.fittyfitty h2 { 
+    font-family: 'InterMedium', sans-serif;
+    color: #EB5351;
+    margin-top: 3%; 
+}
+
+.fittyfitty p {
+    font-family: 'Interregular', sans-serif;
+    color: #000000; 
+    font-size: 17px;
+    line-height: 1.7;
+    margin-top: 5%;
+  
+} 
+
+.fittyfitty section{
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-left: 5%;
+    width: 50%;
+}
+
+
+.fittyfitty div{
+    padding-top: 4%;
+    padding-right: 5%;
+    padding-bottom: 4%;
+    width: 39%;
+}
+
+.fittyfitty div img{
+    width: 100%;
+
+}
 
 
  
@@ -57,6 +116,6 @@
 
 
 /*keramik*/
-.fittyfitty{
-    background-color: #DBD8C6;
-}
+   
+
+
