@@ -1,4 +1,4 @@
-/*fælles*/
+/*FÆLLES-----*/
 
 .keramikforside{
     position: relative;
@@ -17,18 +17,65 @@
 }
 
 .pilned {
-    margin-left: 95%; 
-    margin-top: 34%;
+    margin-left: 180%; 
+    margin-top: 70%;
  }
 
+ /* fittyfitty kommer her ---------------------------------*/
+
+ .fittyfitty{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #DBD8C6;
+    width: 100%;
+}
+
+.fittyfitty h2 { 
+    font-family: 'InterMedium', sans-serif;
+    color: #EB5351;
+    margin-top: 3%; 
+}
+
+.fittyfitty h3{
+    font-family: 'InterMedium', sans-serif;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.fittyfitty p {
+    font-family: 'Interregular', sans-serif;
+    color: #000000; 
+    font-size: 17px;
+    line-height: 1.7;
+    margin-top: 5%;
+} 
+
+.fittyfitty ul{
+    font-family: 'Interregular', sans-serif;
+    list-style-type:disc;
+    margin-left: 2.5%;
+}
+
+.fittyfitty section{
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-left: 5%;
+    width: 50%;
+}
 
 
+.fittyfitty div{
+    padding-top: 4%;
+    padding-right: 5%;
+    padding-bottom: 4%;
+    width: 39%;
+}
 
+.fittyfitty div img{
+    width: 100%;
 
-
-
-
-
+}
 
  
  /* et . er en class og # er en id */
@@ -54,9 +101,8 @@
     text-decoration: none;
     color:#0499BF;
     font-size: 1.5em;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Interlight', sans-serif;
     text-transform: uppercase;
-    font-weight: lighter;
     margin-top: 1%;
 }
 
@@ -76,7 +122,9 @@
 .fittyfitty h2 { 
     font-family: 'InterMedium', sans-serif;
     color: #EB5351;
-    margin-top: 3%; 
+    margin-top: 5%; 
+    padding-top: 8%;
+    
 }
 
 .fittyfitty p {
@@ -84,22 +132,23 @@
     color: #000000; 
     font-size: 17px;
     line-height: 1.7;
-    margin-top: 5%;
+    margin-top: 5%; 
+    padding-top: 2%;
   
 } 
 
 .fittyfitty section{
-    padding-top: 4%;
-    padding-bottom: 4%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     padding-left: 5%;
     width: 50%;
 }
 
 
 .fittyfitty div{
-    padding-top: 4%;
+    padding-top: 2%;
     padding-right: 5%;
-    padding-bottom: 4%;
+    padding-bottom: 2%;
     width: 39%;
 }
 
@@ -111,11 +160,91 @@
 
  
 
-
-
-
-
 /*keramik*/
+.fittyfitty{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #DBD8C6;
+    width: 100%;
+}
+
+.fittyfitty h2 { 
+    font-family: 'Interregular', sans-serif;
+    color: #EB5351;
+    margin-top: 3%; 
+}
+
+.fittyfitty h3{
+    font-family: 'InterMedium', sans-serif;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.fittyfitty p {
+    font-family: 'Interregular', sans-serif;
+    color: #000000; 
+    font-size: 17px;
+    line-height: 1.7;
+    margin-top: 5%;
+} 
+
+.fittyfitty ul{
+    font-family: 'Interregular', sans-serif;
+    list-style-type:disc;
+    margin-left: 2.5%;
+}
+
+.fittyfitty section{
+    padding-top: 5%;
+    padding-bottom: 4%;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 50%;
+}
+
+
+.fittyfitty div{
+    padding-top: 10%;
+    padding-right: 5%;
+    padding-bottom: 10%;
+    width: 39%;
+}
+
+.fittyfitty div img{
+    width: 100%;
    
+}
 
+.priser{
+    width: 100%;
+    margin-left: 15%;
+    padding-top:15%;  
 
+}
+
+.omværksted1{
+    width: 100%;
+    padding-top: 25%;
+   
+}
+
+.omværksted2{
+    width: 100%;
+}
+#omværkstedet11{
+    padding-top: 5%;
+    padding-bottom: 0%;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 50%;
+}  
+
+#omværkstedet22{
+    padding-top: 0%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 50%;
+    
+}
