@@ -31,9 +31,6 @@ h1{
     font-weight: lighter; 
     font-family: 'InterEkstraLight', sans-serif;
     text-transform: uppercase;
-    
-    
-    
 }
 
 *{ 
@@ -67,7 +64,7 @@ h1{
     color: white;
     margin-top: 35%;
     margin-left: 45%;
-    
+    font-family: 'InterRegular', sans-serif;
 }
 /*kalender afsnit*/
 /*Meningen er at man skal kunne swipe til nyt kalender afsnit, men da dette skal laves med javescprit, har vi kun lavet det i stillestand, uden effekter*/
@@ -83,22 +80,28 @@ h1{
     color: black;
     font-size: 200%;
     text-align: center;
-    
+    font-family: 'InterMedium', sans-serif;
 }
 
-.kalenderkort h2, .kalenderkort p{
+.kalenderkort h2{
     text-align: left;
     margin-left: 33%;
+    font-family: 'InterRegular', sans-serif;
+    text-transform: uppercase;
    
 }
 .kalenderkort p{
+    text-align: left;
+    margin-left: 33%;
     font-size: 110%;
+    font-family: 'InterSemiBold', sans-serif;
 }
 
 .kalenderkort h3{
     text-align: right;
     margin-right: 35%;
     margin-top: -3%;
+    font-family: 'InterBold', sans-serif;
 }
 
 .dejudstilling img{
@@ -134,13 +137,13 @@ z-index: 0;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-image: url(images/gul_ellipse4.png);
+    background-image: url(images/gul_ellipse2.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
    
     margin-top: 20rem;
-    padding: 50% 10%;
+    padding: 15rem 10rem;
 }
 
 .lejlok section{
@@ -172,6 +175,7 @@ z-index: 0;
     margin: 1rem auto;
     margin-bottom: 3rem;
     width: 70%;
+    font-family: 'InterRegular', sans-serif;
 }
 .lm{
     background-color: #0499bf;
@@ -179,10 +183,18 @@ z-index: 0;
     text-decoration: none;
     border-radius: 15rem;
     padding: 1rem 3rem;
-    
+    box-shadow: rgb(0, 0, 0, 0.5) 0px 5px 10px;
+    font-family: 'InterRegular', sans-serif; 
+    transform: scale(1);
 }
 
-/*HVORFOR ER DER SÅ MEGET MELLEMRUM MELLEM AFSNIT?*/
+.lm:hover{
+    transition: transform 0.5s ease;
+    transform: scale(1.2);
+    background-color: #EB5351;
+}
+
+/*HVORFOR ER DER SÅ MEGET MELLEMRUM MELLEM AFSNIT? --- JEG HAR PRØVET AF FIKSE DET, MEN VED IKKE HVOR GODT DET ER?*/ 
 
 .godsafsnit{
     display: flex;
@@ -193,13 +205,13 @@ z-index: 0;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-image: url(images/grå_ellipse2.png);
+    background-image: url(images/grå_ellipse3.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
    
     margin-top: 20rem;
-    padding: 50% 10%;
+    padding: 10rem 10rem;
 }
 
 .godsafsnit section{
@@ -223,8 +235,8 @@ z-index: 0;
 .godsafsnit div img{
     width: 100%;
     z-index: 5;
-    border-radius: 100%; /*ER BILLEDET HELT RUNDT, ELLER ER DET BARE MINE ØJNE?*/
-    padding-top: 15%;
+    border-radius: 100%; /*ER BILLEDET HELT RUNDT, ELLER ER DET BARE MINE ØJNE?*/ /*Det er den padding der åbenbart*/
+    /*padding-top: 15%;*/
 }
 
 .godsafsnit section p{
@@ -232,6 +244,7 @@ z-index: 0;
     margin: 1rem auto;
     margin-bottom: 3rem;
     width: 70%;
+    font-family: 'InterRegular', sans-serif;
 }
 
 
@@ -243,14 +256,33 @@ z-index: 0;
     /*Kalender afsnit*/
 
     /*Afsnit*/
-    .lejlok{
-        display: block;
+    .lejlok, .godsafsnit{
+        display: flex;
+        flex-direction: column;
         text-align: center;
+        padding: 8rem 0rem;
+        margin-top: 5rem;
+        background-size:auto;
     }
-    .godsafsnit{
-        display: block;
-        text-align: center;
+
+    .lejlok section, .godsafsnit section{
+        width: 100%;
     }
+
+    .lejlok section h1, .godsafsnit section h1{
+        font-size: 3rem;
+        min-width: 80%;
+    }
+    .lejlok div, .godsafsnit div{
+        width: 45%;
+        margin-top: 2rem;
+    }
+    .lm, .lm:hover{
+        background-color: #0499bf;
+    }
+
+    
+
 
 
 }

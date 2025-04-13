@@ -30,6 +30,7 @@
 #sortering .dropdown-list{
     position: relative;
     cursor: pointer;
+    z-index: 10;
 }
 
 #sortering .dropdown-content{
@@ -52,6 +53,8 @@
     text-transform: uppercase;
     font-family: 'InterRegular', sans-serif;
     cursor: pointer;
+    font-size: 12px;
+    z-index: 10;
 }
 
 #sortering .dropdown-content li a{
@@ -118,6 +121,8 @@
 .kort:hover img{
     filter: blur(2px);
     transition: filter 0.5s ease;
+    transition: transform 0.5s ease;
+    transform: scale(1.05);
 }
 
 .kort-info{
@@ -131,7 +136,7 @@
     color: rgb(0, 0, 0);
     text-align: center;
     padding: 10px;
-    z-index: 7;
+    z-index: 5;
 
     opacity: 0;
     transition: opacity 0.5s ease;
@@ -142,6 +147,8 @@
     transition: background-color 0.5s ease;
     opacity: 1;
     transition: opacity 0.3s ease;
+    transition: transform 0.5s ease;
+    transform: scale(1.05);
     
 }
 
@@ -170,7 +177,7 @@
     margin-left: 1rem;
 }
 
-.kalender_blank{
+#blankkort{
     display: block;
 }
 
@@ -210,27 +217,34 @@
         gap: 2%;
     }
 
+    #blankkort img{
+        display: none;  /* DET HER VIRKER IKKE ORDENTLIGT - HVORFOR?*/
+        height: 1%;
+    }
     
     .kort {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 30%;
+        margin-bottom: 11rem;
     }
 
-    .kort:hover img{
+    .kort-container .kort:hover img{
         filter:none;
         transition: none;
+        transform: none;
     }
 
     .kort-info {
         position: static; /* Remove absolute positioning */
         width: 100%;
-        opacity: 1; 
+        opacity: 1;
     }
     .kort-info:hover{ 
         background-color: transparent;
         opacity: 1; 
+        transition: none;
+        transform: none;
     }
 
     .kort-info h2{
@@ -246,11 +260,4 @@
     .månedeoverskrift{
         margin-left: 6rem;
     }
-
-    .kalender_blank{
-        display: none;
-        visibility: hidden;
-        background-color: yellow;
-    }
-
 }
