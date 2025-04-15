@@ -5,6 +5,11 @@
     width: 100%;
 }
 
+#bølgebillede-top{
+    width:100%;
+    position: relative;
+}
+
 .bølgebillede{
     width: 100%;
     margin: 0;
@@ -14,6 +19,9 @@
     background-size:cover;
     height: 100vh;
     z-index: 1;
+}
+.bølgebillede-mobile{
+    display: none;
 }
 
 .pilned {
@@ -219,22 +227,7 @@
    
 }
 
-.priser{
-    width: 100%;
-    margin-left: 15%;
-    padding-top:15%;  
 
-}
-
-.omværksted1{
-    width: 100%;
-    padding-top: 25%;
-   
-}
-
-.omværksted2{
-    width: 100%;
-}
 #omværkstedet11{
     padding-top: 5%;
     padding-bottom: 0%;
@@ -250,4 +243,95 @@
     padding-right: 5%;
     width: 50%;
     
+}
+
+@media screen and (max-width:1000px){
+    .bølgebillede{
+        display: none;
+    }
+
+    .bølgebillede-mobile{
+        width: 100%;
+        margin: 0;
+        position: relative;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:cover;
+        height: 100vh;
+        z-index: 1;
+        display: block;
+    }
+
+    .fittyfitty{
+        flex-direction: column;
+        align-items: center;
+        gap: 2%;
+    } 
+
+    .fittyfitty h2 { 
+        margin-top: 5%; 
+    }
+
+    .fittyfitty section{
+        width: 100%;
+    }
+
+    .fittyfitty div{
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 2rem 0;
+    }
+
+    .keramikforside{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .genvejsgruppe {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+
+    .genvejsgruppe h1{
+        font-size: 38px;
+        margin-top: 1rem;
+    }
+
+    .genveje {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2%;
+        margin-top: 6rem;
+        width: 100%;
+    }
+
+    .genveje a{
+        background-color: rgb(219, 216, 198, 0.5);
+        color: #ffffff;
+        font-family: 'InterSemiBold', sans-serif;
+        padding: 1rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        width: 90%;
+        display: block;
+        box-sizing: border-box;
+    }
+
+    .pilned{
+        margin-left: 80%; 
+        margin-top: 0%;
+    }
+
+    #omværkstedet11, #omværkstedet22{
+        padding-top: 0%;
+        padding-bottom: 0%;
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 100%;
+    }
 }
