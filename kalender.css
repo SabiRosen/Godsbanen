@@ -217,9 +217,10 @@
         gap: 2%;
     }
 
-    #blankkort img{
+    #blankkort{
         display: none;  /* DET HER VIRKER IKKE ORDENTLIGT - HVORFOR?*/
         height: 1%;
+        visibility: hidden;
     }
     
     .kort {
