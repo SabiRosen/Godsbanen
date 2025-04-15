@@ -1,4 +1,7 @@
 /*FÆLLES-----*/
+html {
+    scroll-behavior: smooth;
+}
 
 .keramikforside{
     position: relative;
@@ -294,30 +297,39 @@
     .genvejsgruppe {
         margin-left: 0;
         margin-top: 1rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
     }
 
     .genvejsgruppe h1{
         font-size: 38px;
         margin-top: 1rem;
+        
     }
 
     .genveje {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        text-align: center;
         gap: 2%;
         margin-top: 6rem;
         width: 100%;
     }
 
     .genveje a{
-        background-color: rgb(219, 216, 198, 0.5);
+        background-color: rgb(219, 216, 198, 0.7);
         color: #ffffff;
         font-family: 'InterSemiBold', sans-serif;
         padding: 1rem;
         margin-bottom: 2rem;
         text-align: center;
-        width: 90%;
+        width: 60%;
         display: block;
         box-sizing: border-box;
     }
