@@ -14,14 +14,101 @@ header{
     z-index: 10; 
 }
 
+/*BURGER MENU OG DROPDOWN ELEMENTER*/
+
+#menu-toggle{
+    display: none; /* Hide the checkbox by default */
+}
+
+
 #burger{
     width:50px;
     height: 50px;
     display: none;
     margin-top: 2%;
     margin-right: 4%;
+    cursor: pointer;
     z-index: 10;
 }
+
+#mobile-nav{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px; 
+    right: 0;
+    width: 40%;
+    height: 100vh;
+    background-color: #FCB9B5; 
+    z-index: 10; 
+    padding: 20px 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #EB5351 #FCB9B5;
+}
+
+#menu-toggle:checked + label + #mobile-nav {
+    display: flex; /* Show the mobile navigation when the checkbox is checked */
+}
+
+#mobile-nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+
+#mobile-nav ul .værksteder-dropdown{
+    display: none;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-align: right;
+}
+
+#mobile-nav ul .værksteder-dropdown li{
+    margin: 0;
+    padding: 10px 0;
+}
+
+#mobile-nav ul .værksteder-dropdown li a{
+    text-decoration: none;
+    color:#FFF575;
+    text-shadow: #EB5351 2px 4px 4px;
+    font-family: 'InterMedium', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    display: block;
+    padding: 10px 0;
+}
+
+#værksteder-toggle:checked + label + .værksteder-dropdown {
+    display: flex; /* Show the dropdown when the checkbox is checked */
+}
+
+#mobile-nav li{
+    margin: 10px 0;
+    width: 100%;
+}
+
+#mobile-nav li a, #mobile-nav label[for="værksteder-toggle"]{
+    text-decoration: none;
+    color:#EB5351;
+    font-family: 'InterBold', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    display: block;
+    padding: 10px 0;
+    width: 100%;
+}
+
+#mobile-nav label[for="værksteder-toggle"]{
+    cursor: pointer;
+}
+
+/*----------------------------------------------------------------*/
 
 #laptopnav{
     display: flex;
@@ -99,7 +186,7 @@ nav .dropdown-content li a {
     padding: 8px 16px;
 }
 
-/* footer */
+/* FOOTER */
 
 footer{
     display: flex;
@@ -160,16 +247,21 @@ footer a{
         padding-left: 20px;
         padding-right: 20px;
     }
+    header a:hover{
+        text-shadow: none;
+        transition: none; 
+    }
     #laptopnav{
         display: none;
     }
     #burger{
         display: block;
+        margin-top: 1rem;
     }  
     #logo{
         height:50px;
         width:50px;
-        margin-top: 2%;
+        margin-top: 1rem;
     }
     footer div{
         display: flex;
