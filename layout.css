@@ -34,7 +34,7 @@ html {
 
  /* fittyfitty kommer her ---------------------------------*/
 
- .fittyfitty{
+ .fittyfitty, .fittyfittypriser{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -42,19 +42,19 @@ html {
     width: 100%;
 }
 
-.fittyfitty h2 { 
+.fittyfitty h2, .fittyfittypriser h2{ 
     font-family: 'InterMedium', sans-serif;
     color: #EB5351;
     margin-top: 3%; 
 }
 
-.fittyfitty h3{
+.fittyfitty h3, .fittyfittypriser h3{
     font-family: 'InterMedium', sans-serif;
     text-align: left;
     text-transform: uppercase;
 }
 
-.fittyfitty p {
+.fittyfitty p, .fittyfittypriser p{
     font-family: 'Interregular', sans-serif;
     color: #000000; 
     font-size: 17px;
@@ -62,7 +62,7 @@ html {
     margin-top: 5%;
 } 
 
-.fittyfitty ul{
+.fittyfitty ul, .fittyfittypriser ul{
     font-family: 'Interregular', sans-serif;
     list-style-type:disc;
     margin-left: 2.5%;
@@ -80,14 +80,29 @@ html {
     padding-top: 4%;
     padding-right: 5%;
     padding-bottom: 4%;
-    width: 39%;
+    width: 40%;
 }
 
-.fittyfitty div img{
+
+.fittyfitty div img, .fittyfittypriser div img{
     width: 100%;
 
 }
 
+.fittyfittypriser section{
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-right: 5%;
+    width: 50%;
+}
+
+
+.fittyfittypriser div{
+    padding-top: 4%;
+    padding-left: 5%;
+    padding-bottom: 4%;
+    width: 40%;
+}
  
  /* et . er en class og # er en id */
 
@@ -158,26 +173,32 @@ html {
         display: block;
     }
 
-    .fittyfitty{
+    .fittyfitty, .fittyfittypriser{
+        display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         gap: 2%;
+        width: 100%;
+        padding: 2rem 0;
     } 
 
-    .fittyfitty h2 { 
+    .fittyfitty h2, .fittyfittypriser h2{ 
         margin-top: 5%; 
     }
 
-    .fittyfitty section{
+    .fittyfitty section, .fittyfittypriser section{
         width: 100%;
+        margin: 0 auto;
+        padding: 1rem;
     }
 
-    .fittyfitty div{
+    .fittyfitty div, .fittyfittypriser div{
         width: 80%;
         align-items: center;
         justify-content: center;
-        margin: 0;
-        padding: 2rem 0;
+        margin: 0 auto;
+        padding: 1rem;
     }
 
     .keramikforside{
