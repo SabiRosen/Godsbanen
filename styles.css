@@ -178,7 +178,7 @@ h1{
     align-items: flex-start;
     opacity: 0;
 
-    pointer-events: none; /* Allow hover events to pass through to the image */
+    pointer-events: none;
     transition: opacity 0.5s ease;
 }
 
@@ -450,7 +450,7 @@ z-index: 0;
         font-size: 2rem;
     }
     .scrollbox{
-        width: 100%;
+        width: 80%;
         height: auto;
         margin: 2rem;
         padding: 0;
@@ -458,20 +458,72 @@ z-index: 0;
     }
     .scrollbox img{
         box-shadow: 10px 10px #EB5351;
+        width: 20rem;
+        height: 20rem;
     }
     .scrollbox img:hover{
         background-color: rgb(219, 216, 198, 0.7);
     }
-
+    .forsidekort{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        margin: 1rem 0;
+    }
+    
     .forsidekort img:hover{
         transform: none;
         transition: none;
     }
     
+    .forsidekort:hover{
+        opacity: 1;
+        transition: none;
+        transition: none;
+    }
     .forsidekort:hover .kort-info-forside{
-        opacity: 0;
+        opacity: 1;
         transition: none;
+        background-color: transparent;
         transition: none;
+    }
+    .kort-info-forside{
+        display: flex;
+        position: static;
+        width: 80%;
+        height: auto;
+        text-align: left;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 1rem;
+        padding: 1rem;
+        opacity: 1;
+        transition: none;
+        margin-left: 2rem;
+        padding: 0;
+    }
+    .kort-info-forside p{
+        text-align: left;
+        margin-left: 0rem;
+        font-size: 1rem;
+        align-self: flex-start;
+        
+    }
+    .kort-info-forside h2{
+        text-align: right;
+        margin-top: auto;
+        font-size: 1.3rem;
+        align-self: flex-end;
+        position: static;
+    }
+    .kort-info-forside h3{
+        margin: 0;
+        text-align: left;
+        align-self: flex-start;
+        font-size: 1.2rem;
     }
     
 
