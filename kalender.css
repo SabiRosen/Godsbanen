@@ -98,16 +98,32 @@
 }
 
 /*KALENDER KORT*/
-
-.kort-container{
+#kalenderkort-container{
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    gap: 8%;
+    align-items: center;
+    flex-direction: column;
     margin-top: 4%;
 }
 
+
+.kort-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 3rem;
+    margin-top: 4%;
+    width: fit-content;
+    box-sizing: border-box;
+    
+}
+
 .kort{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     position: relative;
     width: 300px;
     height: 300px;
@@ -116,6 +132,7 @@
 .kort img{
     width: 100%;
     height: 100%;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
 }
 
 .kort:hover img{
@@ -123,6 +140,7 @@
     transition: filter 0.5s ease;
     transition: transform 0.5s ease;
     transform: scale(1.05);
+    
 }
 
 .kort-info{
@@ -177,13 +195,9 @@
     margin-left: 1rem;
 }
 
-#blankkort{
-    display: block;
-}
 
 .månedeoverskrift{
     text-align: left;
-    margin-left: 12rem;
     font-family: 'InterBold', sans-serif;
     color:#EB5351;
     text-transform: uppercase;
@@ -215,12 +229,6 @@
         flex-direction: column;
         align-items: center;
         gap: 2%;
-    }
-
-    #blankkort{
-        display: none;  /* DET HER VIRKER IKKE ORDENTLIGT - HVORFOR?*/
-        height: 1%;
-        visibility: hidden;
     }
     
     .kort {
@@ -258,7 +266,4 @@
         margin-bottom: 1rem;
     }
 
-    .månedeoverskrift{
-        margin-left: 6rem;
-    }
 }
