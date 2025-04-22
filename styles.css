@@ -302,6 +302,7 @@ h1{
    
     margin-top: 15rem;
     padding: 15rem 10rem;
+    margin-bottom: 10rem;
 }
 
 .godsafsnit section{
@@ -363,12 +364,12 @@ h1{
         width: 55%;
         margin-left: 3rem;
         position: absolute;
-        top: 20%;
+        top: 40%;
         z-index: 8;
     }
     #forsidebillede div p{
         position: absolute;
-        top: 30%;
+        top: 50%;
         margin-left: 3rem;
         width: 55%;
         z-index: 8;
@@ -487,7 +488,7 @@ h1{
     }
     .godsafsnit{
         padding-bottom: 10rem;
-        margin-bottom: -25rem;
+        margin-bottom: -20rem;
     }
 
     .lejlok section, .godsafsnit section{
@@ -521,7 +522,6 @@ h1{
         margin: 0 auto;
         text-align: center;
     }
-
 
 }
 

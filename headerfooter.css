@@ -170,7 +170,7 @@ nav .dropdown:hover .dropdown-content {
     display: block;
 }
 
-/* Hide the dropdown menu by default */
+/* Skjul dropdown menuen som default */
 nav .dropdown-content {
     display: none;
     position: absolute;
