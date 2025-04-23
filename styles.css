@@ -39,11 +39,15 @@ h1{
     box-sizing:border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .tiltoppen{
     position: fixed;
     bottom: 2%;
     right: 2%;
-    z-index: 11;
+    z-index: 9;
     background-color: #EB5351;
     border-radius: 50%;
     width: 50px;
@@ -98,11 +102,13 @@ h1{
     position: relative;
     z-index: 2;
     top: 0;
+    display: block;
 }
 
 .forsidevideo video{
     width: 100%;
-    display: block; 
+    height: auto;
+    display: block;
 }
 
 #forsidebillede{
@@ -375,7 +381,6 @@ h1{
     #video-mobil{
         display: block;
         width: 100%;
-        
     }
     
     .herologo{
@@ -405,6 +410,7 @@ h1{
     }    
     
     .scrollbox{
+        display: flex;
         position: relative;
         top: -30rem;
         width: 100%;
@@ -414,11 +420,13 @@ h1{
         gap: 1rem;
         z-index: 8;
         bottom:0;
+        justify-content: space-between;
     }
     .scrollbox img{
         box-shadow: 10px 10px #EB5351;
-        width: 20rem;
-        height: 20rem;
+        width: 18rem;
+        height: 18rem;
+        margin: 2rem;
     }
     .scrollbox img:hover{
         background-color: rgb(219, 216, 198, 0.7);
@@ -431,6 +439,7 @@ h1{
         height: 100%;
         text-align: center;
         margin: 1rem 0;
+        gap: 5%;
     }
     
     .forsidekort img:hover{

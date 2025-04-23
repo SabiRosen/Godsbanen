@@ -1,7 +1,5 @@
 /*FÆLLES-----*/
-html {
-    scroll-behavior: smooth;
-}
+
 
 .keramikforside{
     position: relative;
@@ -223,7 +221,7 @@ html {
     }
 
     .genvejsgruppe h1{
-        font-size: 38px;
+        font-size: 32px;
         margin-top: 1rem;
         
     }
@@ -246,7 +244,7 @@ html {
         padding: 1rem;
         margin-bottom: 2rem;
         text-align: center;
-        width: 60%;
+        width: 65%;
         display: block;
         box-sizing: border-box;
     }

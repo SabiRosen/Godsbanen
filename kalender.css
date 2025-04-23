@@ -213,8 +213,10 @@
     }
 
     #sortering{
-        margin-left: 6rem;
+        justify-content: space-between;
+        gap: 10%;
         margin-top: 2rem;
+        margin-left:5%;
     }
 
     #sortering ul{
@@ -223,7 +225,7 @@
 
     .search {
         width: 80px;
-        margin-right: 6rem;
+        margin-right: 5%;
     }
 
     .kort-container{
