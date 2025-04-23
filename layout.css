@@ -34,7 +34,7 @@ html {
 
  /* fittyfitty kommer her ---------------------------------*/
 
- .fittyfitty, .fittyfittypriser{
+ .fittyfitty, .fittyfitty2{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -42,19 +42,19 @@ html {
     width: 100%;
 }
 
-.fittyfitty h2, .fittyfittypriser h2{ 
+.fittyfitty h2, .fittyfitty2 h2{ 
     font-family: 'InterMedium', sans-serif;
     color: #EB5351;
     margin-top: 3%; 
 }
 
-.fittyfitty h3, .fittyfittypriser h3{
+.fittyfitty h3, .fittyfitty2 h3{
     font-family: 'InterMedium', sans-serif;
     text-align: left;
     text-transform: uppercase;
 }
 
-.fittyfitty p, .fittyfittypriser p{
+.fittyfitty p, .fittyfitty2 p{
     font-family: 'Interregular', sans-serif;
     color: #000000; 
     font-size: 17px;
@@ -62,7 +62,7 @@ html {
     margin-top: 5%;
 } 
 
-.fittyfitty ul, .fittyfittypriser ul{
+.fittyfitty ul, .fittyfitty2 ul{
     font-family: 'Interregular', sans-serif;
     list-style-type:disc;
     margin-left: 2.5%;
@@ -84,12 +84,12 @@ html {
 }
 
 
-.fittyfitty div img, .fittyfittypriser div img{
+.fittyfitty div img, .fittyfitty2 div img{
     width: 100%;
 
 }
 
-.fittyfittypriser section{
+.fittyfitty2 section{
     padding-top: 4%;
     padding-bottom: 4%;
     padding-right: 5%;
@@ -97,7 +97,7 @@ html {
 }
 
 
-.fittyfittypriser div{
+.fittyfitty2 div{
     padding-top: 4%;
     padding-left: 5%;
     padding-bottom: 4%;
@@ -155,29 +155,7 @@ html {
     width: 50%;
     
 }
-#bookknap{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    width: 100%
-}   
-#bookknap a{
-    position: relative;
-    background-color: #0499bf;
-    color:white;
-    text-decoration: none;
-    border-radius: 15rem;
-    padding: 1rem 3rem;
-    box-shadow: rgb(0, 0, 0, 0.5) 0px 5px 10px;
-    text-transform: uppercase;
-    font-family: 'InterRegular', sans-serif; 
-    transform: scale(1);
-    text-align: center;
-}
-#bookknap:hover{
-    transition: transform 0.5s ease;
-    transform: scale(1.05);
-}
+
 
 @media screen and (max-width:1000px){
     .bølgebillede{
@@ -196,7 +174,7 @@ html {
         display: block;
     }
 
-    .fittyfitty, .fittyfittypriser{
+    .fittyfitty, .fittyfitty2{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -206,23 +184,23 @@ html {
         padding: 2rem 0;
     } 
 
-    .fittyfitty h2, .fittyfittypriser h2{ 
+    .fittyfitty h2, .fittyfitty2 h2{ 
         margin-top: 5%; 
     }
 
-    .fittyfitty section, .fittyfittypriser section{
+    .fittyfitty section, .fittyfitty2 section{
         width: 100%;
         margin: 0 auto;
-        padding: 1rem;
+        padding: 3rem;
         order: 1;
     }
 
-    .fittyfitty div, .fittyfittypriser div{
+    .fittyfitty div, .fittyfitty2 div{
         width: 80%;
         align-items: center;
         justify-content: center;
         margin: 0 auto;
-        padding: 1rem;
+        padding: 3rem;
         order: 2;
     }
 
@@ -281,18 +259,8 @@ html {
     #omværkstedet11, #omværkstedet22{
         padding-top: 0%;
         padding-bottom: 0%;
-        padding-left: 5%;
-        padding-right: 5%;
+        padding-left: 3rem;
+        padding-right: 3rem;
         width: 100%;
-    }
-
-    #booknap a{
-        transition: none;
-        transform: none;
-    }
-
-    #bookknap:hover{
-        transition: none;
-        transform: none;
     }
 }
