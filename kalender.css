@@ -98,6 +98,7 @@
 }
 
 /*KALENDER KORT*/
+
 #kalenderkort-container{
     display: flex;
     justify-content: center;
@@ -117,12 +118,6 @@
 .kort-container{
     flex: 0 1 auto;
 }
-/*.kort-end{
-    background-color: red;
-    flex-direction: row;
-    margin-right: 10.9rem;
-}
-    Kan kun få det første billede i sidste række, til at rykke sig */
 
 .kort{
     display: inline-block;
