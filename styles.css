@@ -508,6 +508,7 @@ html {
         height: auto;
         background-position: center;
         top: -20rem;
+        width: 100%;
     }
     .lejlok{
         padding-bottom: 15rem;
@@ -524,6 +525,7 @@ html {
     }
     .lejlok section{
         margin-top: 2rem;
+        width: 100%;
     }
    
     .lejlok section h1, .godsafsnit section h1{
