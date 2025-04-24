@@ -79,6 +79,7 @@
     padding-right: 5%;
     padding-bottom: 4%;
     width: 40%;
+    margin-top: 2%;
 }
 
 
@@ -100,6 +101,7 @@
     padding-left: 5%;
     padding-bottom: 4%;
     width: 40%;
+    margin-top: 2%;
 }
  
  /* et . er en class og # er en id */
@@ -151,7 +153,6 @@
     padding-left: 5%;
     padding-right: 5%;
     width: 50%;
-    
 }
 
 
